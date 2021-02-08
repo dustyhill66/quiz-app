@@ -1,0 +1,83 @@
+[
+	{
+		"id": "1",
+		"type": "text",
+		"question": "При какой температуре кипит вода?",
+		"optionA": "50 градусов Цельсия",
+		"optionB": "25 градусов Цельсия",
+		"optionC": "100 градусов Цельсия",
+		"optionD": "150 градусов Цельсия",
+		"answer": "100 градусов Цельсия"
+	},
+	{
+		"id": "2",
+		"type": "text",
+		"question": "В каком году не стало Джима Моррисона?",
+		"optionA": "1971",
+		"optionB": "1975",
+		"optionC": "1973",
+		"optionD": "1972",
+		"answer": "1973"
+	},
+	{
+		"id": "3",
+		"type": "pic",
+		"image": "https://www.wsws.org/asset/f618cec7-aacc-49e4-8930-484de40b3908?rendition=image1280",
+		"question": "Из какой группы чувак?",
+		"optionA": "The Doors",
+		"optionB": "The Who",
+		"optionC": "The Kinks",
+		"optionD": "The Beatles",
+		"answer": "The Doors"
+	},
+	{
+		"id": "4",
+		"type": "text",
+		"question": "В каком году вышел альбом Pink Floyd The Wall?",
+		"optionA": "1967",
+		"optionB": "1968",
+		"optionC": "1970",
+		"optionD": "1965",
+		"answer": "1970"
+	},
+	{
+		"id": "5",
+		"type": "text",
+		"question": "Кто жил по адресу 221Б, Бэйкер Стрит, Лондон?",
+		"optionA": "Оливер Твист",
+		"optionB": "Карлсон",
+		"optionC": "Шерлок Холмс",
+		"optionD": "Профессор Мориарти",
+		"answer": "Шерлок Холмс"
+	},
+	{
+		"id": "6",
+		"type": "text",
+		"question": "Кто автор рок-оперы Jesus Super Christ?",
+		"optionA": "Джон Ллойд Уэббер",
+		"optionB": "Иен Гиллан",
+		"optionC": "Роберт Плант",
+		"optionD": "Ллойд Эндрю Уэббер",
+		"answer": "Ллойд Эндрю Уэббер"
+	},
+	{
+		"id": "7",
+		"type": "text",
+		"question": "Кто первый исполнил песню Whiskey in the jar?",
+		"optionA": "Metallica",
+		"optionB": "Golden Earring",
+		"optionC": "Thin Lizzy",
+		"optionD": "The Outlaws",
+		"answer": "Thin Lizzy"
+	},
+	{
+		"id": "8",
+		"type": "text",
+		"question": "Ударник T.Rex?",
+		"optionA": "Стив Тук",
+		"optionB": "Робби Денсмор",
+		"optionC": "Бен Ган",
+		"optionD": "Стивен Гаррет",
+		"answer": "Стив Тук"
+	}
+]
