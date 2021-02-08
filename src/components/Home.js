@@ -5,18 +5,20 @@ const Home = () => {
 
 	return (
 		<>
-			<div id="home">
-				<section>
-					<div style={{textAlign: 'center'}}>
+			<div className="home">
+				<div className="home__container">
+					<div className="home__logo-wrap">
 						<span className="mdi mdi-cube-outline cube"></span>
 					</div>
-					<h1>Rock App</h1>
-					<div className="play-button-container">
+					<h1 className="logo__title">Rock App</h1>
+					<div className="home__btn-wrap">
 						<ul>
-							<li><Link className="play-button" to="/play/quiz">Play</Link></li>
+							<li>
+								<Link className="home__btn home__btn-play" to="/play/quiz">Play</Link>
+							</li>
 						</ul>
 					</div>
-				</section>
+				</div>
 			</div>
 		</>
 	)

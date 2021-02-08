@@ -31,13 +31,10 @@ const QuizSummary = (props) => {
 		if(props.location.state.playerStats.score !== undefined) {
 			stats = (
 				<>
-					<div style={{ textAlign: 'center' }}>
-						<span className="mdi mdi-check-circle-outline succes-icon"></span>
-					</div>
-					<h1>Игра завершена</h1>
-					<div className="container stats">
-						<h4>{remark}</h4>
-						<h2>Твой счет:: {userScore.toFixed(0)}&#37;</h2>
+					<h1 className="header__text">Игра завершена</h1>
+					<div className="stats__wrap stats">
+						<h4 className="verdict">{remark}</h4>
+						<h2 className="user-score">Твой счет:: {userScore.toFixed(0)}&#37;</h2>
 						<span className="stat left">Общее количество вопросов: </span>
 						<span className="right">{props.location.state.playerStats.numOfAnsweredQuestions}</span><br />
 
@@ -47,37 +44,25 @@ const QuizSummary = (props) => {
 						<span className="stat left">Число ошибочных ответов: </span>
 						<span className="right">{props.location.state.playerStats.wrongAnswers}</span><br />
 					</div>
-					<section>
-						<ul>
-							<li>
-								<Link to="/play/quiz">Начать новую игру</Link>
-							</li>
-							<li>
-								<Link to="/">Вернуться в главное меню</Link>
-							</li>
-						</ul>
-					</section>
+					<div className="btn__wrap">
+						<Link className="btn__restart" to="/play/quiz">Начать игру</Link>
+						<Link className="btn__back" to="/">Вернуться в главное меню</Link>
+					</div>
 				</>
 			)
 		} else {
 			stats = (
 				<section>
 					<h1 className="no-stats">No Statistics Available</h1>
-					<ul>
-						<li>
-							<Link to="/play/quiz">Начать игру</Link>
-						</li>
-						<li>
-							<Link to="/">Вернуться в главное меню</Link>
-						</li>
-					</ul>
+					<Link className="btn__restart" to="/play/quiz">Начать игру</Link>
+					<Link className="btn__back" to="/">Вернуться в главное меню</Link>
 				</section>
 			)
 			
 		} 
 		return (
 			<>
-				<div className="quiz-summary">
+				<div className="quiz-summary__container">
 					{stats}
 				</div>
 			</>
