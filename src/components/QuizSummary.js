@@ -19,13 +19,13 @@ const QuizSummary = (props) => {
 		if(userScore <= 30) {
 			remark = 'Тебе нужно больше тренироваться!'
 		} else if(userScore > 30 && userScore <= 50) {
-			remark = 'Better luck next time!'
+			remark = 'Ты сможешь лучше!'
 		} else if(userScore <= 70 && userScore > 50) {
-			remark = 'You can do better!'
+			remark = 'Ты можешь лучше!'
 		} else if(userScore >= 71 && userScore < 84) {
-			remark = 'You did great!'
+			remark = 'Хорошо! Ты ответил почти на все вопросы правильно'
 		} else {
-			remark = 'You\'re an absolute genius'
+			remark = 'Круто! Ты ответил правильно на все вопросы!'
 		}
 
 		if(props.location.state.playerStats.score !== undefined) {
@@ -53,7 +53,7 @@ const QuizSummary = (props) => {
 		} else {
 			stats = (
 				<section>
-					<h1 className="no-stats">No Statistics Available</h1>
+					<h1 className="no-stats">Что-то пошло не так</h1>
 					<Link className="btn__restart" to="/play/quiz">Начать игру</Link>
 					<Link className="btn__back" to="/">Вернуться в главное меню</Link>
 				</section>

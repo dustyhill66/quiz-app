@@ -16,6 +16,9 @@ const Home = () => {
 							<li>
 								<Link className="home__btn home__btn-play" to="/play/quiz">Play</Link>
 							</li>
+							{/* <li>
+								<Link className="home__btn home__btn-choice" to="/play/choice">Выбор уровня</Link>
+							</li> */}
 						</ul>
 					</div>
 				</div>

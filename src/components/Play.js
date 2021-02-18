@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-//import classnames from 'classnames'
 import M from 'materialize-css'
 import questions from '../questions.json'
 import isEmpty from '../utils/is-empty'
@@ -8,7 +7,7 @@ const Play = (props) => {
 	const [currentQuestion, setCurrentQuestion] = useState({})
 	const [typeOfQuestion, setTypeOfQuestion] = useState('')
 	const [nextQuestion, setNextQuestion] = useState({})
-	const [prevQuestion, setPrevQuestion] = useState({})
+//	const [prevQuestion, setPrevQuestion] = useState({})
 	const [answer, setAnswer] = useState('')
 	const [numOfQuestions, setNumOfQuestions] = useState(0)
 	const [numOfAnsweredQuestions, setNumOfAnsweredQuestions] = useState(0)
@@ -27,7 +26,7 @@ const Play = (props) => {
 		if(!isEmpty(questions)) {
 			setCurrentQuestion(questions[currentQuestionIndex])
 			setNextQuestion(questions[currentQuestionIndex + 1])
-			setPrevQuestion(questions[currentQuestionIndex -1])
+		//	setPrevQuestion(questions[currentQuestionIndex -1])
 			setAnswer(currentQuestion.answer)
 			setTypeOfQuestion(currentQuestion.type)
 		}
