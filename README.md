@@ -1,0 +1,1 @@
+npm i && npm run start - for run app
